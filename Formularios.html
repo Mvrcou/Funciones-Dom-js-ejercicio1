@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio Dom, eventos y funciones</title>
+        <script type="text/javascript" src="EjerciciosDom.js"></script>
+        <style>
+            .divs{
+                width: 200px;
+                height: 150px;
+                margin: 20px;
+                padding: 15px;
+                border: solid;
+                border-radius: 10px;
+                border-color:grey;
+                float: left;
+            }
+            .dashed{
+                
+                border: dashed;
+                
+
+            }
+            .underline{
+                text-decoration: underline;
+                margin-top: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>aca puros vios haciendo los ejercicios</h1>
+        <!-- 1.- Nombre, apellidos y edad
+             2 boton de submit
+             3 mostrar datos en pantalla
+             4 tener un boton que al darle click nos muestra los datos actuales del formulario
+            
+        -->
+        <div class="divs">
+            <form action="#" method="post" id="formulario" onsubmit="return false;">
+                <label for="nombre">Nombre:</label></br>
+                <input type="text" name="nombre" id="nombre"> <br>
+
+                <label for="apellidos">Apellidos:</label><br> 
+                <input type="text" name="apellidos" id="apellidos"><br>
+
+                <label for="edad">Edad:</label><br>
+                <input type="text" name="edad" id="edad"><br>
+                <input type="submit" value="enviar" id="submit">
+
+            </form>
+        </div>
+        <div class="divs dashed">
+            <h4 class="h4 underline">Informacion del usuario:</h4>
+
+        </div>
+    </body>
+</html>
